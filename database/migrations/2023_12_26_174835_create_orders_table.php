@@ -10,7 +10,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->decimal('total_price', 10, 2);
+            $table->bigInteger('total_price');
             $table->string('status')->default('pending');
             $table->timestamps();
         });
