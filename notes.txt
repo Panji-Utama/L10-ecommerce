@@ -1,0 +1,1 @@
+1. Use Laravel Mix to use CSS. First npm i laravel-mix then npm run dev. There may or may not be a css folder on the public folder. Add css there. Call using <link rel="stylesheet" href="{{ asset('css/login.css') }}"> 
