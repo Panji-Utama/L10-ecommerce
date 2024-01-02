@@ -20,7 +20,7 @@
             <img src="{{ asset('images/logo.png') }}" alt="" id="logo">
             <h2>The best and most aesthetic e-commerce <br>website you'll ever use</h2>
         </div>
-        <div class="right-content">
+        <div class="right-content" style="background-image: url('{{ asset('images/background.png') }}');">
             <div class="login-container">
                 <h2>Welcome to Gacor</h2>
                 <form method="POST" action="{{ route('login') }}">
