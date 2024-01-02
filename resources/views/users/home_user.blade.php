@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{asset('css/home_user.css')}}">
 </head>
 <body>
-    <h1>Home for User</h1>
+    <img src=" {{ asset('images/logo.png') }} " alt="">
 </body>
 </html>

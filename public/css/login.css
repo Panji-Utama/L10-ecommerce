@@ -1,46 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 .login-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
 }
+
 .login-container h2 {
     text-align: center;
-    color: #07b9f5;
+    color: #fff;
 }
-.form-group {
-    margin-bottom: 15px;
+.input-icon {
+    margin-bottom: 25px;
 }
-.form-group label {
-    display: block;
+/* .form-group label {
     margin-bottom: 5px;
+} */
+
+.input-icon i {
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.form-group input {
-    width: 100%;
+
+.input-icon input[type="text"] {
+    font-family: "Lato", sans-serif;
+}
+
+.input-icon input {
+    width: 80%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-.form-group button {
-    width: 100%;
+
+.input-icon input:focus {
+    box-shadow: 0px 0px 29px 10px rgba(255, 255, 255, 0.3);
+}
+
+.login button {
+    width: 40%;
     padding: 10px;
     border: none;
-    background-color: #edb31c;
+    background: rgb(32, 37, 63);
+    background: linear-gradient(
+        322deg,
+        rgb(38, 42, 59) 0%,
+        rgba(45, 104, 116, 1) 48%,
+        rgba(0, 145, 174, 1) 100%
+    );
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
-.form-group button:hover {
-    background-color: #07b9f5;
+
+.login button:hover {
+    transform: scale(1.2);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    /* overflow: hidden; */
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.login-separator {
+    display: flex;
+    color: white;
+}
+
+.left-content {
+    height: 100vh;
+    /* width: 60%; */
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.left-content h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.left-content img {
+    width: 40%;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 40%; */
+    flex: 2;
+}
+
+.login-container {
+    background-color: black;
+    padding: 50px 15px;
+    border-radius: 10%;
 }
