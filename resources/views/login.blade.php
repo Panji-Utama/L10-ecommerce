@@ -15,27 +15,25 @@
 </head>
 
 <body>
+    @vite('resources/js/app.js')
     <div class="login-separator">
         <div class="left-content">
             <img src="{{ asset('images/logo.png') }}" alt="" id="logo">
-            <h2>The best and most aesthetic e-commerce <br>website you'll ever use</h2>
+            <h2>The best most aesthetic e-commerce <br>website you'll ever use</h2>
         </div>
-        <div class="right-content" style="background-image: url('{{ asset('images/background.png') }}');">
+        <div class="right-content" style="background-image: url('{{ asset('images/background-dark.png') }}');">
             <div class="login-container">
                 <h2>Welcome to Gacor</h2>
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('login') }}" id="loginForm">
                     @csrf
-                    <!-- <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required autofocus>
-                    </div> -->
+
                     <div class="input-icon">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="text" id="email_username" name="email_username" placeholder="Email or username" value="{{ old('email_username') }}" required autofocus>
                     </div>
                     <div class="input-icon">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="password" id="password" name="password" placeholder="Password" value="{{ old('password') }}" required>
                     </div>
                     <div class="login">
                         <button type="submit">Login</button>
@@ -44,6 +42,22 @@
             </div>
         </div>
     </div>
+    <div id="alertBox" class="alert-box">
+        <p id="alertMessage"></p>
+    </div>
+
 </body>
+
+@if($errors->any())
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        showAlert('{{ $errors->first() }}');
+    });
+</script>
+@endif
+
+<script src="{{ asset('js/login.js') }}"></script>
+
+
 
 </html>
