@@ -9,13 +9,27 @@
 </head>
 
 <body>
-    @vite('resources/js/app.js')
-    <marquee behavior="" direction="" style="color: white;">Wassup peopleee</marquee>
-    <h1>Test</h1>
-    <img src=" {{ asset('images/logo.png') }} " alt="">
-    <h2>Hey</h2>
-    <h1>yoyw</h1>
-    <h4>lol</h4>
+    @vite('resources/js/app.js', 'resources/css/app.css')
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="brand-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="">
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li>
+                        <a href="">Nav1</a>
+                        <a href="">Nav2</a>
+                        <a href="">Nav3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>Yow brother</h2>
 </body>
 
 </html>
