@@ -9,6 +9,11 @@ use App\Models\User;
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
+
+    public function mock_home(){
+        return view('users.home_user');
+    }
+
     public function showLogin()
     {
         return view('login');

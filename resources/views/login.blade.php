@@ -24,16 +24,16 @@
         <div class="right-content" style="background-image: url('{{ asset('images/background-dark.png') }}');">
             <div class="login-container">
                 <h2>Welcome to Gacor</h2>
-                <form method="POST" action="{{ route('login') }}" id="loginForm">
+                <form method="GET" action="{{ route('mock_home') }}" id="loginForm">
                     @csrf
 
                     <div class="input-icon">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="email_username" name="email_username" placeholder="Email or username" value="{{ old('email_username') }}" required autofocus>
+                        <input type="text" id="email_username" name="email_username" placeholder="Email or username" value="{{ old('email_username') }}" autofocus>
                     </div>
                     <div class="input-icon">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" id="password" name="password" placeholder="Password" value="{{ old('password') }}" required>
+                        <input type="password" id="password" name="password" placeholder="Password" value="{{ old('password') }}">
                     </div>
                     <div class="login">
                         <button type="submit">Login</button>
