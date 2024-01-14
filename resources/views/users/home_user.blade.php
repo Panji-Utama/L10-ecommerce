@@ -38,7 +38,17 @@
         </div>
     </nav>
 
-    <h2>Yow brother</h2>
+    <div class="hero-home">
+        <div class="left__hero-home">
+            <h2 style="font-weight: 300;">TERDAPAT BANYAK</h2>
+            <h2 style="font-weight: 700;">PRODUK BARU</h2>
+            <p>Kursi dan meja yang mewah nan elegan</p>
+            <button class="button-black">SHOP NOW</button>
+        </div>
+        <div class="right__hero-home">
+            <img src="{{ asset('images/man-sit-on-sofa.png') }}" alt="">
+        </div>
+    </div>
 </body>
 
 </html>
