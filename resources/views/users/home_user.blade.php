@@ -51,4 +51,10 @@
     </div>
 </body>
 
+<footer>
+    <div class="footer">
+        <h2>All right reserved to &copy; Firman Panji Utama - 2024</h2>
+    </div>
+</footer>
+
 </html>

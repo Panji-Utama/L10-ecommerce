@@ -56,3 +56,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
