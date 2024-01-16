@@ -49,6 +49,10 @@
             <img src="{{ asset('images/man-sit-on-sofa.png') }}" alt="">
         </div>
     </div>
+    
+    <div class="content">
+        
+    </div>
 </body>
 
 <footer>
