@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +15,8 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
-
-// Route::get('user', function() {
-//     return view('users.home_user');
-// });
-
-Route::get('user', [LoginController::class, 'mock_home'])-> name('mock_home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
